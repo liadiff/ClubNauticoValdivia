@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Portada página de muelles*/
+
+#portada-muelles {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#portada-muelles img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#portada-muelles div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    text-shadow: 2px 2px 6px black;
+
+    animation: aparecerTexto 0.8s;
+}
+
+@keyframes aparecerTexto {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+#portada-muelles h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+#portada-muelles p {
+    font-size: 22px;
+}
+
+/*Información de los Muelles*/
+
+#informacion-muelles{
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+
+/*Responsive*/
+@media(max-width: 600px) {
+
+    #portada-muelles {
+        height: 300px;
+    }
+
+    #portada-muelles h1 {
+        font-size: 35px;
+    }
+
+    #portada-muelles p {
+        font-size: 17px;
+    }
+
+}
