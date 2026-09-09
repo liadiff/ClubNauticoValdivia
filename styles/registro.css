@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    background-image: url("../img/fondo2.jpg");
+    background-image: url("../imgs/fondo.jpg");
 }
 
 #content {
@@ -12,7 +12,7 @@ body {
     padding: 40px 20px;
 }
 
-.cuadroInicio {
+.cuadroRegistro {
     width: 400px;
     max-width: 100%;
     text-align: center;
@@ -21,7 +21,7 @@ body {
     border-radius: 10px;
 }
 
-.cuadroInicio button {
+.cuadroRegistro button {
     background-color: #5b9fe7;
     color: white;
     padding: 12px 35px;
@@ -31,7 +31,7 @@ body {
     cursor: pointer;
 }
 
-.cuadroInicio  button:hover {
+.cuadroRegistro  button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
