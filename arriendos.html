@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="styles/arriendos.css">
+</head>
+<body>
+    <h1>Arriendos</h1>
+    <p>Aqui podras arrendar todos nuestros espacios</p>
+
+	<h2>Espacios</h2>
+	<div class="arriendos_container">
+		<div class="arriendo">
+			<h3>Muelle</h3>
+			<select id="tamano_muelle">
+				<option value="muelle_8">8 M | 26 FT</option>
+				<option value="muelle_10_5">10.5 M | 34.5 FT</option>
+				<option value="muelle_15_5">15.5 M | 49 FT</option>
+				<option value="muelle_23">23 M | 75 FT</option>
+			</select>
+			<p>Introduzca el tiempo de arriendo: </p>
+			<select id="muelle_tipo_tiempo">
+				<option value="m_dias">Dias</option>
+				<option value="m_semenas">Semanas</option>
+				<option value="m_meses">Meses</option>
+			</select>
+			<input id="muelle_tiempo"></input>
+			<button>Agregar</button>
+		</div>
+	</div>
+	<div class="arriendos">
+		<h3>Almacen</h3>
+		<select id="arriendo">
+			<option value="almacen_8">8 M | 26 FT</option>
+			<option value="almacen_12">12 M | 39 FT</option>
+			<option value="almacen_16">16 M | 52 FT</option>
+			<option value="almacen_20">20 M | 65 FT</option>
+			<option value="almacen_25">25 M | 82 FT</option>
+		</select>
+		<p>Introduzca el tiempo de arriendo</p>
+		<input id="almacen_tiempo" placeholder="Tiempo en Meses"></input>
+		<button>Agregar</button>
+	</div>
+
+	<h2>Servicios</h2>
+	<div class="arriendos_container">
+		<div id="arriendo">
+			<h3>Estacionamiento</h3>
+			<p>Introduzca el numero de dias: </p>
+			<input id="estacionamiento_dias"></input>
+			<button>Agregar</button>
+		</div>
+		<div id="arriendo">
+			<h3>Pistola de Agua a Presion</h3>
+			<p>Introduzca el numero de horas: </p>
+			<input id="pistola_horas"></input>
+			<button>Agregar</button>
+		</div>
+	</div>
+</body>
+</html>
