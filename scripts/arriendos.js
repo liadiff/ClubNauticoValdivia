@@ -7,6 +7,9 @@ const FormatoCLP = new Intl.NumberFormat('es-CL', {
     currency: 'CLP'
 })
 
+// Variables Carrito
+var total_carrito = 0;
+
 
 // Utilidades
 function ObtenerCostoMuelle(tamano_muelle, unidad_tiempo) {
@@ -155,6 +158,90 @@ function ActualizarCosto(servicio) {
     }
 
     p_costo.textContent = FormatoCLP.format(Number(costo));
+}
+
+function anadirArriendo(arriendo) {
+    let nombre;
+    let costo_unitario;
+    let tiempo;
+    let subtotal;
+
+    // Variables switch
+    let tamano;
+    let tamano_index;
+    let n_tiempo;
+    
+    switch (arriendo) {
+        case "muelle":
+            tamano = document.getElementById("tamano_muelle")
+            tamano_index = tamano.selectedIndex;
+
+            nombre = "Muelle (" + tamano.options[tamano_index].text + ")";
+
+            costo_unitario = ObtenerCostoMuelle(
+                tamano.value, 
+                document.getElementById("muelle_tipo_tiempo").value
+            );
+            
+            n_tiempo = Number(document.getElementById("muelle_tiempo").value);
+
+            let tipo_tiempo = document.getElementById("muelle_tipo_tiempo");
+            let tiempo_index = document.getElementById("muelle_tipo_tiempo").selectedIndex;
+            tiempo = n_tiempo + " " + tipo_tiempo[tiempo_index].text;
+
+            subtotal = costo_unitario * n_tiempo;
+            break;
+
+        case "almacen":
+            tamano = document.getElementById("tamano_almacen")
+            tamano_index = tamano.selectedIndex;
+
+            nombre = "Almacen (" + tamano.options[tamano_index].text + ")";
+
+            costo_unitario = ObtenerCostoAlmacen(tamano.value);
+            console.log(tamano.value);
+            
+            n_tiempo = Number(document.getElementById("almacen_tiempo").value);
+            tiempo = n_tiempo + " Mes(es)"
+
+            subtotal = costo_unitario * n_tiempo;
+            break;
+
+        case "estacionamiento":
+            nombre = "Estacionamiento";
+            costo_unitario = costo_estacionamiento;
+
+            n_tiempo = Number(document.getElementById("estacionamiento_tiempo").value);
+            tiempo = n_tiempo + " Dia(s)"
+            subtotal = costo_unitario * n_tiempo;
+            break;
+
+        case "pistola_de_agua":
+            nombre = "Pistola de Agua a Presion";
+            costo_unitario = costo_pistola_agua;
+
+            n_tiempo = Number(document.getElementById("pistola_de_agua_tiempo").value);
+            tiempo = n_tiempo + " Hora(s)"
+            subtotal = costo_unitario * n_tiempo;
+            break;
+    }
+
+    // Actualizar Total
+    total_carrito += subtotal;
+    document.getElementById("total_carrito").textContent = FormatoCLP.format(total_carrito);
+
+    // Actualizar Tabla
+    let tabla_carrito = document.getElementById("elementos_carrito");
+    let nueva_fila = tabla_carrito.insertRow(-1);
+    let c_nombre = nueva_fila.insertCell(-1);
+    let c_costo_unitario = nueva_fila.insertCell(-1);
+    let c_tiempo = nueva_fila.insertCell(-1);
+    let c_subtotal = nueva_fila.insertCell(-1);
+
+    c_nombre.textContent = nombre; 
+    c_costo_unitario.textContent = FormatoCLP.format(costo_unitario); 
+    c_tiempo.textContent = tiempo; 
+    c_subtotal.textContent = FormatoCLP.format(subtotal); 
 }
 
 

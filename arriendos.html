@@ -8,99 +8,116 @@
 </head>
 <body>
     <h1>Arriendos</h1>
-    <p>Aqui podras arrendar todos nuestros espacios</p>
+    <p>Aqui podras arrendar todo lo que necesites para tu velero y tu estancia en nuestro club.</p>
 
-	<h2>Espacios</h2>
-	<div class="arriendos_container">
-		<div class="arriendos">
-			<h3>Muelle</h3>
+	<div class="arriendo_body">
+		<h2>Espacios</h2>
+		<div class="arriendos_container">
+			<div class="arriendos">
+				<h3>Muelle</h3>
 
-			<div class="datos_arriendo">
-				<p>Tamaño: </p>
-				<select id="tamano_muelle">
-					<option value="muelle_8">8 M | 26 FT</option>
-					<option value="muelle_10_5">10.5 M | 34.5 FT</option>
-					<option value="muelle_15_5">15.5 M | 49 FT</option>
-					<option value="muelle_15_5">18 M | 59 FT</option>
-					<option value="muelle_23">23 M | 75 FT</option>
-				</select>
+				<div class="datos_arriendo">
+					<p>Tamaño: </p>
+					<select id="tamano_muelle">
+						<option value="muelle_8">8 M | 26 FT</option>
+						<option value="muelle_10_5">10.5 M | 34.5 FT</option>
+						<option value="muelle_15_5">15.5 M | 49 FT</option>
+						<option value="muelle_18">18 M | 59 FT</option>
+						<option value="muelle_23">23 M | 75 FT</option>
+					</select>
+				</div>
+				
+
+				<p>Introduzca el tiempo de arriendo: </p>
+				
+				<div class="datos_arriendo">
+					<select id="muelle_tipo_tiempo">
+						<option value="m_dias">Dias</option>
+						<option value="m_semanas">Semanas</option>
+						<option value="m_meses">Meses</option>
+					</select>
+					<input id="muelle_tiempo"></input>
+				</div>
+
+				<div class="datos_arriendo">
+					<p>Costo: </p>
+					<p id="costo_muelle">$0</p>
+				</div>
+
+				<button class="agregar_arriendo" onclick = "anadirArriendo('muelle')">Agregar</button>
 			</div>
-			
 
-			<p>Introduzca el tiempo de arriendo: </p>
-			
-			<div class="datos_arriendo">
-				<select id="muelle_tipo_tiempo">
-					<option value="m_dias">Dias</option>
-					<option value="m_semanas">Semanas</option>
-					<option value="m_meses">Meses</option>
-				</select>
-				<input id="muelle_tiempo"></input>
+			<div class="arriendos">
+				<h3>Almacen</h3>
+
+				<div class="datos_arriendo">
+					<p>Tamaño: </p>
+					<select id="tamano_almacen">
+						<option value="almacen_8">8 M | 26 FT</option>
+						<option value="almacen_12">12 M | 39 FT</option>
+						<option value="almacen_16">16 M | 52 FT</option>
+						<option value="almacen_20">20 M | 65 FT</option>
+						<option value="almacen_25">25 M | 82 FT</option>
+					</select>
+				</div>
+
+				<p>Introduzca el tiempo de arriendo: </p>
+				<input id="almacen_tiempo" placeholder="Tiempo en Meses"></input>
+				
+				<div class="datos_arriendo">
+					<p>Costo: </p>
+					<p id="costo_almacen">$0</p>
+				</div>
+				
+				<button class="agregar_arriendo" onclick="anadirArriendo('almacen')">Agregar</button>
 			</div>
-
-			<div class="datos_arriendo">
-				<p>Costo: </p>
-				<p id="costo_muelle">$0</p>
-			</div>
-
-			<button class="agregar_arriendo">Agregar</button>
 		</div>
+		
 
-		<div class="arriendos">
-			<h3>Almacen</h3>
+		<h2>Servicios</h2>
+		<div class="arriendos_container">
+			<div class="arriendos">
+				<h3>Estacionamiento</h3>
+				<p>Introduzca el numero de dias: </p>
+				<input id="estacionamiento_tiempo"></input>
 
-			<div class="datos_arriendo">
-				<p>Tamaño: </p>
-				<select id="tamano_almacen">
-					<option value="almacen_8">8 M | 26 FT</option>
-					<option value="almacen_12">12 M | 39 FT</option>
-					<option value="almacen_16">16 M | 52 FT</option>
-					<option value="almacen_20">20 M | 65 FT</option>
-					<option value="almacen_25">25 M | 82 FT</option>
-				</select>
+				<div class="datos_arriendo">
+					<p>Costo: </p>
+					<p id="costo_estacionamiento">$0</p>
+				</div>
+
+				<button class="agregar_arriendo" onclick="anadirArriendo('estacionamiento')">Agregar</button>
 			</div>
 
-			<p>Introduzca el tiempo de arriendo: </p>
-			<input id="almacen_tiempo" placeholder="Tiempo en Meses"></input>
-			
-			<div class="datos_arriendo">
-				<p>Costo: </p>
-				<p id="costo_almacen">$0</p>
+			<div class="arriendos">
+				<h3>Pistola de Agua a Presion</h3>
+				<p>Introduzca el numero de horas: </p>
+				<input id="pistola_de_agua_tiempo"></input>
+
+				<div class="datos_arriendo">
+					<p>Costo: </p>
+					<p id="costo_pistola_de_agua">$0</p>
+				</div>
+
+				<button class="agregar_arriendo" onclick="anadirArriendo('pistola_de_agua')">Agregar</button>
 			</div>
-			
-			<button class="agregar_arriendo">Agregar</button>
 		</div>
 	</div>
-	
 
-	<h2>Servicios</h2>
-	<div class="arriendos_container">
-		<div class="arriendos">
-			<h3>Estacionamiento</h3>
-			<p>Introduzca el numero de dias: </p>
-			<input id="estacionamiento_tiempo"></input>
-
-			<div class="datos_arriendo">
-				<p>Costo: </p>
-				<p id="costo_estacionamiento">$0</p>
-			</div>
-
-			<button class="agregar_arriendo">Agregar</button>
+	<div class="carrito">
+		<h2>Carrito</h2>
+		<table id="elementos_carrito">
+			<tr>
+				<td>Arriendo</td>
+				<td>Costo Unitario</td>
+				<td>Tiempo</td>
+				<td>Subtotal</td>
+			</tr>
+		</table>
+		<div class="total_carrito">
+			<p>Total: </p>
+			<p id="total_carrito"> $0</p>
 		</div>
-
-		<div class="arriendos">
-			<h3>Pistola de Agua a Presion</h3>
-			<p>Introduzca el numero de horas: </p>
-			<input id="pistola_de_agua_tiempo"></input>
-
-			<div class="datos_arriendo">
-				<p>Costo: </p>
-				<p id="costo_pistola_de_agua">$0</p>
-			</div>
-
-			<button class="agregar_arriendo">Agregar</button>
-		</div>
-
 	</div>
 </body>
 <script src="scripts/arriendos.js"></script>
