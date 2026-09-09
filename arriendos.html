@@ -20,15 +20,20 @@
 			<a href="inicio.html">Socios</a>
 		</section>
 	</header>
-    <h1>Arriendos</h1>
-    <p>Aqui podras arrendar todo lo que necesites para tu velero y tu estancia en nuestro club.</p>
 
+	<img class="imagen_portada" src="imgs/yankee-point-catamaran-haulout-3-1024x768.jpg">
+
+	<div class="titulo_pagina">
+		<h1>Arriendos</h1>
+    	<p>Aqui podras arrendar todo lo que necesites para tu velero y tu estancia en nuestro club.</p>
+	</div>
+    
 	<div class="arriendo_body">
 		<h2>Espacios</h2>
 		<div class="arriendos_container">
 			<div class="arriendos">
 				<h3>Muelle</h3>
-
+				<img class="servicio_imagen" src="imgs/marina.webp">
 				<div class="datos_arriendo">
 					<p>Tamaño: </p>
 					<select id="tamano_muelle">
@@ -62,7 +67,7 @@
 
 			<div class="arriendos">
 				<h3>Almacen</h3>
-
+				<img class="servicio_imagen" src="imgs/houl.webp">
 				<div class="datos_arriendo">
 					<p>Tamaño: </p>
 					<select id="tamano_almacen">
@@ -91,6 +96,7 @@
 		<div class="arriendos_container">
 			<div class="arriendos">
 				<h3>Estacionamiento</h3>
+				<img class="servicio_imagen" src="imgs/estacionamientos.jpg">
 				<p>Introduzca el numero de dias: </p>
 				<input id="estacionamiento_tiempo"></input>
 
@@ -104,6 +110,7 @@
 
 			<div class="arriendos">
 				<h3>Pistola de Agua a Presion</h3>
+				<img class="servicio_imagen" src="imgs/pistola_de_agua.webp">
 				<p>Introduzca el numero de horas: </p>
 				<input id="pistola_de_agua_tiempo"></input>
 
@@ -116,7 +123,7 @@
 			</div>
 		</div>
 	</div>
-
+	<div style="height: 50px;"></div>
 	<div class="carrito">
 		<h2>Carrito</h2>
 		<table id="elementos_carrito">
@@ -133,7 +140,6 @@
 		</div>
 		<button onclick="Pagar()">Pagar</button>
 	</div>
-
 	<footer>
 		<section>
 			<h2>Contacto</h2>

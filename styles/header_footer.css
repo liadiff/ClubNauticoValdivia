@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -29,7 +34,6 @@ footer {
     background-color: #F0F0F0;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    flex: 1;
 }
 
 .datos_footer {
