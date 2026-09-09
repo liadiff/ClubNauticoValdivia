@@ -21,6 +21,7 @@
 					<option value="muelle_8">8 M | 26 FT</option>
 					<option value="muelle_10_5">10.5 M | 34.5 FT</option>
 					<option value="muelle_15_5">15.5 M | 49 FT</option>
+					<option value="muelle_15_5">18 M | 59 FT</option>
 					<option value="muelle_23">23 M | 75 FT</option>
 				</select>
 			</div>
@@ -31,7 +32,7 @@
 			<div class="datos_arriendo">
 				<select id="muelle_tipo_tiempo">
 					<option value="m_dias">Dias</option>
-					<option value="m_semenas">Semanas</option>
+					<option value="m_semanas">Semanas</option>
 					<option value="m_meses">Meses</option>
 				</select>
 				<input id="muelle_tiempo"></input>
@@ -39,7 +40,7 @@
 
 			<div class="datos_arriendo">
 				<p>Costo: </p>
-				<p>$0</p>
+				<p id="costo_muelle">$0</p>
 			</div>
 
 			<button class="agregar_arriendo">Agregar</button>
@@ -64,7 +65,7 @@
 			
 			<div class="datos_arriendo">
 				<p>Costo: </p>
-				<p>$0</p>
+				<p id="costo_almacen">$0</p>
 			</div>
 			
 			<button class="agregar_arriendo">Agregar</button>
@@ -77,11 +78,11 @@
 		<div class="arriendos">
 			<h3>Estacionamiento</h3>
 			<p>Introduzca el numero de dias: </p>
-			<input id="estacionamiento_dias"></input>
+			<input id="estacionamiento_tiempo"></input>
 
 			<div class="datos_arriendo">
 				<p>Costo: </p>
-				<p>$0</p>
+				<p id="costo_estacionamiento">$0</p>
 			</div>
 
 			<button class="agregar_arriendo">Agregar</button>
@@ -90,11 +91,11 @@
 		<div class="arriendos">
 			<h3>Pistola de Agua a Presion</h3>
 			<p>Introduzca el numero de horas: </p>
-			<input id="pistola_horas"></input>
+			<input id="pistola_de_agua_tiempo"></input>
 
 			<div class="datos_arriendo">
 				<p>Costo: </p>
-				<p>$0</p>
+				<p id="costo_pistola_de_agua">$0</p>
 			</div>
 
 			<button class="agregar_arriendo">Agregar</button>
@@ -102,4 +103,5 @@
 
 	</div>
 </body>
+<script src="scripts/arriendos.js"></script>
 </html>
