@@ -22,4 +22,6 @@ boton.addEventListener("click", function() {
         return;
     }
 
+    window.location.href = "vista_general.html"
+
 });

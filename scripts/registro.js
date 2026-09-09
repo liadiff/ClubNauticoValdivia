@@ -54,4 +54,5 @@ boton.addEventListener("click", function() {
         return;
     }
 
+    window.location.href = "index.html"
 });

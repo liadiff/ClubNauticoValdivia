@@ -22,4 +22,5 @@ boton.addEventListener("click", function() {
         return;
     }
 
+    window.location.href = "arriendos.html"
 });
