@@ -1,0 +1,147 @@
+/*Diseño general*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Portada de almacenamiento*/
+#portada-almacenamiento {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#portada-almacenamiento img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+#portada-almacenamiento div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    text-shadow: 2px 2px 6px black;
+    animation: aparecerTexto 0.8s;
+}
+
+/*Animacion del Texto*/
+@keyframes aparecerTexto {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#portada-almacenamiento h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+#portada-almacenamiento p {
+    font-size: 22px;
+}
+
+/*Información de almacenamiento*/
+#informacion-almacenamiento {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+#informacion-almacenamiento h2 {
+    font-size: 35px;
+    margin-top: 0;
+}
+
+#informacion-almacenamiento>p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#informacion-almacenamiento h3 {
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+/*Tarjetas de almacenamiento*/
+.tarjetas-almacenamiento {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.tarjetas-almacenamiento article {
+    width: 250 px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px #cccccc;
+}
+
+.tarjetas-almacenamiento h4 {
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.tarjetas-almacenamiento p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.tarjetas-almacenamiento strong {
+    font-size: 20px;
+}
+
+/*Reponsive*/
+
+@media (max-width: 600px) {
+
+    #portada-almacenamiento {
+        height: 300px;
+    }
+
+    #portada-almacenamiento h1 {
+        font-size: 35px;
+    }
+
+    #portada-almacenamiento p {
+        font-size: 17px;
+    }
+
+    #informacion-almacenamiento {
+        padding: 40px 5%;
+    }
+
+    #informacion-almacenamiento h2 {
+        font-size: 28px;
+    }
+
+    #informacion-almacenamiento h3 {
+        font-size: 22px;
+    }
+
+    #informacion-almacenamiento>p {
+        font-size: 16px;
+    }
+
+    .tarjetas-almacenamiento {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjetas-almacenamiento article {
+        width: 80%;
+    }
+}
