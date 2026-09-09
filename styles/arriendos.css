@@ -1,0 +1,71 @@
+.arriendo_body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;  
+    width: 100%;           
+}
+
+.arriendos_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.arriendos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos_arriendo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.datos_arriendo select {
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.agregar_arriendo {
+    margin-top: -10px;
+}
+
+.carrito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total_carrito {
+    display: flex;
+    flex-direction: row;
+    
+    gap: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+tr, td {
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    .arriendos_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .arriendo_categoria {
+        text-align: center;
+    }
+}

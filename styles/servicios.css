@@ -1,0 +1,25 @@
+.servicios_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio_img {
+    width: clamp(200px, 25vw, 390px);
+    height: auto;
+}
+.servicio_costo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: -20px;
+}
