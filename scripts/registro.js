@@ -56,3 +56,9 @@ boton.addEventListener("click", function() {
 
     window.location.href = "index.html"
 });
+
+let botonCancelar = document.getElementById("cancelar");
+
+botonCancelar.addEventListener("click", function() {
+    window.location.href = "inicio.html";
+});

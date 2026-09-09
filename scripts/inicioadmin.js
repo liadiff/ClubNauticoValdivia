@@ -25,3 +25,9 @@ boton.addEventListener("click", function() {
     window.location.href = "vista_general.html"
 
 });
+
+let botonRegistrarse = document.getElementById("registrarse");
+
+botonRegistrarse.addEventListener("click", function() {
+    window.location.href = "registro.html";
+});

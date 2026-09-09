@@ -1,6 +1,6 @@
-let boton = document.getElementById("iniciar");
+let botonIniciar = document.getElementById("iniciar");
 
-boton.addEventListener("click", function() {
+botonIniciar.addEventListener("click", function() {
 
     let correo = document.getElementById("correo").value;
     let contraseña = document.getElementById("contraseña").value;
@@ -23,4 +23,18 @@ boton.addEventListener("click", function() {
     }
 
     window.location.href = "arriendos.html"
+
+
+});
+
+let botonAdmin = document.getElementById("iniciarAdmin");
+
+botonAdmin.addEventListener("click", function() {
+    window.location.href = "inicioadmin.html";
+});
+
+let botonRegistrarse = document.getElementById("registrarse");
+
+botonRegistrarse.addEventListener("click", function() {
+    window.location.href = "registro.html";
 });
