@@ -1,0 +1,17 @@
+.tablas_conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+}
+
+table {
+    min-width: 100px;
+}
+
+@media (max-width: 600px) {
+    .tablas_conteiner {
+        align-items: center;
+        flex-direction: column;
+    }
+}
