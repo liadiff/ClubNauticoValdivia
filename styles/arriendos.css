@@ -1,0 +1,30 @@
+.arriendos_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.arriendos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.datos_arriendo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.datos_arriendo select {
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.agregar_arriendo {
+    margin-top: -10px;
+}
