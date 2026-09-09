@@ -245,6 +245,16 @@ function anadirArriendo(arriendo) {
 }
 
 
+function Pagar() {
+    total_carrito = 0;
+    document.getElementById("total_carrito").textContent = "$0";
+
+    let tabla_carrito = document.getElementById("elementos_carrito");
+    while (tabla_carrito.rows.length > 1) {
+        tabla_carrito.deleteRow(1);
+    }
+}
+
 // Añadir listeners para mostrar costos de arriendo
 document.getElementById("muelle_tiempo").addEventListener('input', () => {ActualizarCosto("muelle")});
 document.getElementById("almacen_tiempo").addEventListener('input', () => {ActualizarCosto("almacen")});
