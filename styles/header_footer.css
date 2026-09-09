@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: solid #000;
+    justify-content: space-evenly;
+    background-color: #123c56;
+    color: white;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .hipervinculos {
@@ -16,8 +26,10 @@ footer {
     align-items: flex-start;
     justify-content: space-around;
     flex-direction: row;
-    border-top: solid #000;
-
+    background-color: #F0F0F0;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    flex: 1;
 }
 
 .datos_footer {
@@ -28,16 +40,27 @@ footer {
     align-items: flex-start;
 }
 
+.espacio-blanco {
+    height: 100px;
+}
+
 @media (max-width: 600px) {
     .hipervinculos {
         flex-direction: column;
         align-items: flex-start;
         gap: 0px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    header a {
+        padding-top: 8px;
     }
 
     footer {
         flex-direction: column;
-        align-items: row;
+        align-items: center;
+        justify-content: center;
     }
 
     footer section {
