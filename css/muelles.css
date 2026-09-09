@@ -54,12 +54,54 @@ body {
 
 /*Información de los Muelles*/
 
-#informacion-muelles{
+#informacion-muelles {
     padding: 60px 8%;
     text-align: center;
     background-color: #f2f2f2;
 }
 
+#informacion-muelles h2 {
+    font-size: 35px;
+    margin-top: 0;
+}
+
+#informacion-muelles>p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#informacion-muelles h3 {
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+/*Tabla de tarifas*/
+
+.contenedor-tabla {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #123c56;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:hover {
+    background-color: #eeeeee;
+}
 
 /*Responsive*/
 @media(max-width: 600px) {
@@ -74,6 +116,31 @@ body {
 
     #portada-muelles p {
         font-size: 17px;
+    }
+
+    /*Informacion de muelles*/
+
+    #informacion-muelles {
+        padding: 40 px 5%;
+
+    }
+
+    #informacion-muelles h2{
+        font-size: 28px;
+    }
+
+    #informacion-muelles h3{
+        font-size: 22px;
+    }
+
+    #informacion-muelles >p{
+        font-size: 16px;
+    }
+
+    th,
+    td{
+        padding: 12px;
+        font-size: 14px;
     }
 
 }
