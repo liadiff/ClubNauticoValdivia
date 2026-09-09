@@ -5,6 +5,21 @@
     gap: 25px;
 }
 
+.titulo_pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F0F0F0;
+    margin-top: -10px;
+}
+
+.imagen_portada {
+    width: 100vw;
+    height: auto;
+}
+
 table {
     min-width: 100px;
 }
